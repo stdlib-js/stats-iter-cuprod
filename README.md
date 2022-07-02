@@ -72,7 +72,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.itercuprod;
+})();
 })();
 </script>
 ```
@@ -136,6 +138,7 @@ p = it.next().value;
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-cuprod@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( -10.0, 10.0, {
@@ -158,6 +161,7 @@ while ( true ) {
     }
 }
 
+})();
 })();
 </script>
 </body>
@@ -264,9 +268,9 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/iter/cusum]: https://github.com/stdlib-js/stats-iter-cusum/tree/umd
+[@stdlib/stats/iter/cusum]: https://github.com/stdlib-js/stats-iter-cusum/tree/umd/tree/umd
 
-[@stdlib/stats/iter/prod]: https://github.com/stdlib-js/stats-iter-prod/tree/umd
+[@stdlib/stats/iter/prod]: https://github.com/stdlib-js/stats-iter-prod/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
