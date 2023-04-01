@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2019 The Stdlib Authors.
@@ -16,16 +16,24 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { Iterator } from '@stdlib/types/iter';
 
 /**
-* Create an iterator which iteratively computes a cumulative product.
+* Returns an iterator which iteratively computes a cumulative product.
 *
-* @module @stdlib/stats-iter-cuprod
+* ## Notes
+*
+* -   If an environment supports `Symbol.iterator`, the returned iterator is iterable.
+*
+* @param iterator - input iterator
+* @returns iterator
 *
 * @example
-* var runif = require( '@stdlib/random-iter-uniform' );
-* var itercuprod = require( '@stdlib/stats-iter-cuprod' );
+* var runif = require( `@stdlib/random/iter/uniform` );
 *
 * var rand = runif( -10.0, 10.0, {
 *     'iter': 100
@@ -44,12 +52,9 @@
 *
 * // ...
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function itercuprod( iterator: Iterator ): Iterator;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = itercuprod;
