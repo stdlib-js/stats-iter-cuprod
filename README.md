@@ -65,7 +65,7 @@ The cumulative product is defined as
 ## Usage
 
 ```javascript
-import itercuprod from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-cuprod@deno/mod.js';
+import itercuprod from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-cuprod@v0.2.0-deno/mod.js';
 ```
 
 #### itercuprod( iterator )
@@ -121,7 +121,7 @@ p = it.next().value;
 
 ```javascript
 import runif from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@deno/mod.js';
-import itercuprod from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-cuprod@deno/mod.js';
+import itercuprod from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-cuprod@v0.2.0-deno/mod.js';
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( -10.0, 10.0, {
